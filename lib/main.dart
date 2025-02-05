@@ -70,12 +70,12 @@ class _TabsNonScrollableDemoState extends State< _TabsNonScrollableDemo>
   }  
   @override
   Widget build(BuildContext context){
-    final tabs = ['Tab1','Tab2','Tab3'];
+    final tabs = ['Husky','Angora Rabbit','Chameleon'];
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(
-          'Tabs Demo',
+          'Pet App',
         ),
         bottom: TabBar(
           controller: _tabController,
