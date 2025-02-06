@@ -88,9 +88,18 @@ class _TabsNonScrollableDemoState extends State< _TabsNonScrollableDemo>
     body: TabBarView(
       controller: _tabController,
       children: [
-       Center(child: Text('Husky')),
-        Center(
-          child: Column(
+       Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Husky'),
+              SizedBox(height: 10),
+              Image.asset('assets/images/husky.jpg', width: 200), //image here
+            ], //Rabbit tab
+        ),
+       ),
+       Center(
+        child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Angora Rabbit'),
@@ -98,8 +107,8 @@ class _TabsNonScrollableDemoState extends State< _TabsNonScrollableDemo>
               Image.asset('assets/images/bunny.jpg', width: 200), //image here
             ], //Rabbit tab
             
-          ),
-          ),
+        ),
+       ),
            Center(child: Text('Chameleon')), // Chameleon Tab
       ],
     ),
